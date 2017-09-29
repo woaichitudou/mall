@@ -1,0 +1,53 @@
+.footer {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.footer::before {
+    content: "";
+    width: 100%;
+    background: rgb(203, 203, 203);
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(60deg);
+    -webkit-transform: rotateX(60deg);
+    /* Safari 与 Chrome */
+}
+
+.footer-box {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.footer-box>a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: rgb(81, 81, 81);
+}
+
+.footer-box>a>i {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.footer-box>a>span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.act {
+    color: rgb(233, 107, 93)!important;
+}
