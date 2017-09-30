@@ -1,3 +1,7 @@
+var i = $(window).height()
+console.log(i)
+$(".search").height(i)
+
 $(document).scroll(function() {
     var top = $(document).scrollTop();
     if (top < 50) {
@@ -57,4 +61,11 @@ $(document).scroll(function() {
         })
     }
 
+})
+$("#show-search").focus(function() {
+    $(".search").fadeIn(100)
+    $(".searah-box-box input").focus()
+})
+$(".searah-box-box>span").click(function() {
+    $(".search").fadeOut(100)
 })

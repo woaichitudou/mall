@@ -11,15 +11,44 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./font_431641_idh3fupftg9zfr/iconfont.css">
     <title>首页</title>
-
 </head>
 
 <body>
+    <!-- 搜索层 -->
+    <div class="search">
+        <div class="searah-box">
+            <div class="searah-box-box">
+                <i class="iconfont">&#xe60a;</i>
+                <input type="text" placeholder="搜索">
+                <span>取消</span>
+            </div>
+        </div>
+        <div class="hot">
+            <div class="hot-title">
+                <i class="iconfont">&#xe61c;</i>
+                <span>热门搜索</span>
+                <a href="">
+                    <small>换一批</small>
+                    <i class="iconfont">&#xe601;</i>
+                </a>
+            </div>
+            <div class="hot-label">
+                <span>零食</span>
+                <span>阿迪达斯</span>
+                <span>化妆品</span>
+                <span>租房信息</span>
+                <span>生活用品</span>
+                <span>中秋</span>
+                <span>零食</span>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索层结束 -->
     <!-- 头部 banner -->
     <div class="head">
         <div class="head-input">
             <i class="iconfont">&#xe60a;</i>
-            <input type="text" placeholder="搜索">
+            <input type="text" placeholder="搜索" id="show-search">
         </div>
         <div class="banner">
             <div class="swiper-container">
@@ -38,6 +67,7 @@
         </div>
     </div>
     <!-- 头部 banner结束 -->
+
     <!-- 导航 -->
     <div class="nav">
         <div class="swiper-wrapper">

@@ -239,3 +239,148 @@
     display: inline-block;
     line-height: 30px;
 }
+
+.search {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+}
+
+.searah-box {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.searah-box::after {
+    content: "";
+    width: 100%;
+    background: rgb(203, 203, 203);
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateX(60deg);
+    -webkit-transform: rotateX(60deg);
+}
+
+.searah-box-box {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.searah-box-box input {
+    border: none;
+    width: 85%;
+    height: 30px;
+    top: 10px;
+    left: 2%;
+    border-radius: 15px;
+    background: rgb(240, 240, 240);
+    position: absolute;
+    text-indent: 10%;
+    color: rgb(162, 162, 162);
+    font-size: 12px;
+}
+
+.searah-box-box input:focus {
+    color: rgb(233, 107, 93);
+}
+
+.searah-box-box i {
+    position: absolute;
+    display: block;
+    left: 4%;
+    top: 14px;
+    z-index: 2;
+    font-size: 20px;
+    color: rgb(112, 112, 112);
+}
+
+.searah-box-box span {
+    position: absolute;
+    display: block;
+    right: 0%;
+    top: 14px;
+    z-index: 2;
+    font-size: 14px;
+    color: rgb(233, 107, 93);
+}
+
+.hot {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hot-title {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hot-title::after {
+    content: "";
+    width: 100%;
+    background: rgb(203, 203, 203);
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateX(60deg);
+    -webkit-transform: rotateX(60deg);
+}
+
+.hot-title>i {
+    font-size: 20px;
+    line-height: 50px;
+    color: rgb(226, 89, 74)
+}
+
+.hot-title span {
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+}
+
+.hot-title>a {
+    display: inline-block;
+    float: right;
+    line-height: 50px;
+}
+
+.hot-title>a small {
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+}
+
+.hot-title>a i {
+    color: rgb(117, 117, 117);
+    font-size: 16px;
+}
+
+.hot-label {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hot-label span {
+    padding: 4px 12px;
+    display: block;
+    float: left;
+    box-shadow: inset 0px 0px 2px 0px #c8c7cc;
+    color: rgb(117, 117, 117);
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
