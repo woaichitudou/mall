@@ -14,7 +14,6 @@
         .head {
             width: 100%;
             position: relative;
-            /* overflow: hidden; */
         }
         
         .head-input {
@@ -65,6 +64,7 @@
         .banner img {
             width: 100%;
             height: 100%;
+            max-height: 170px;
         }
         
         .nav {
@@ -86,6 +86,51 @@
             overflow: hidden;
             color: #fff;
             background: rgb(233, 107, 93);
+            text-indent: 10px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        
+        .nav-1 {
+            background: url(./images/xf-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .nav-2 {
+            background: url(./images/hcls-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .nav-3 {
+            background: url(./images/hzp-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .nav-4 {
+            background: url(./images/shyp-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .nav-5 {
+            background: url(./images/es-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .nav-6 {
+            background: url(./images/zhxx-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+        }
+        
+        .nav-7 {
+            background: url(./images/qtl-01.jpg) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
         }
         
         .swiper-pagination-bullet-active {
@@ -94,20 +139,117 @@
         }
         
         .goods {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             overflow: hidden;
             margin-top: 10px;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
+        }
+        
+        .goods-title {
+            width: 90%;
+            height: 15px;
+            border-left: 2px solid rgb(233, 107, 93);
+            text-indent: 15px;
+            color: rgb(81, 81, 81);
+            font-size: 12px;
+            line-height: 15px;
+            margin: 0 auto;
+        }
+        
+        .goos-border {
+            width: 100%;
+            overflow: hidden;
+            padding: 10px 0px;
+            position: relative;
+        }
+        
+        .goos-border::before {
+            content: "";
+            width: 100%;
+            background: rgb(203, 203, 203);
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotateX(60deg);
+            -webkit-transform: rotateX(60deg);
+            /* Safari 与 Chrome */
         }
         
         .goods-box {
-            width: 100%;
-            height: 200px;
+            width: 90%;
+            /* height: 200px; */
             overflow: hidden;
             border-radius: 5px;
-            margin: 10px 0;
-            background: rgb(233, 107, 93);
+            margin: 10px auto;
+            /* background: rgb(233, 107, 93); */
+        }
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .goods-box small {
+            color: rgb(81, 81, 81);
+            font-size: 14px;
+            line-height: 40px;
+        }
+        
+        .introduce {
+            width: 100%;
+            height: 150px;
+            display: block;
+            margin: 5px 0;
+        }
+        
+        .goods-box h3 {
+            font-size: 14px;
+            color: rgb(30, 30, 30);
+            line-height: 30px;
+        }
+        
+        .goods-box p {
+            font-size: 12px;
+            color: rgb(81, 81, 81);
+            line-height: 16px;
+        }
+        
+        .gods-footer {
+            width: 100%;
+            height: 30px;
+            margin-top: 10px;
+            overflow: hidden;
+            /* background: red; */
+        }
+        
+        .gods-footer>span {
+            padding: 1px 10px;
+            border: 1px solid rgb(233, 107, 93);
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 12px;
+            color: rgb(233, 107, 93);
+            margin-top: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+        
+        .gods-footer-right {
+            float: right;
+            overflow: hidden;
+        }
+        
+        .gods-footer-right>span {
+            color: rgb(154, 154, 154);
+            font-size: 12px;
+            display: inline-block;
+            line-height: 30px;
         }
     </style>
 </head>
@@ -122,9 +264,14 @@
         <div class="banner">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./images/banner01.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./images/banner02.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./images/banner01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/TB2hQvnlzoIL1JjSZFyXXbFBpXa-356060330.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/TB2UwA1cBoHL1JjSZFwXXb6vpXa_!!3012927588.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -135,32 +282,101 @@
     <div class="nav">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="nav-box"></div>
+                <div class="nav-box nav-1">鞋衣</div>
             </div>
             <div class="swiper-slide">
-                <div class="nav-box"></div>
+                <div class="nav-box nav-2">零食小吃</div>
             </div>
             <div class="swiper-slide">
-                <div class="nav-box"></div>
+                <div class="nav-box nav-3">美妆</div>
             </div>
             <div class="swiper-slide">
-                <div class="nav-box"></div>
+                <div class="nav-box nav-4">生活用品</div>
             </div>
             <div class="swiper-slide">
-                <div class="nav-box"></div>
+                <div class="nav-box nav-5">玩转二手</div>
             </div>
             <div class="swiper-slide">
-                <div class="nav-box"></div>
+                <div class="nav-box nav-6">租房信息</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="nav-box nav-7">其他</div>
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
     <!-- 导航结束 -->
     <div class="goods">
-        <div class="goods-box"></div>
-        <div class="goods-box"></div>
-        <div class="goods-box"></div>
-        <div class="goods-box"></div>
+        <div class="goods-title">热门商品</div>
+        <div class="goos-border">
+            <div class="goods-box">
+                <img src="./images/icon.jpg" alt="" class="icon">
+                <small>小明是个小小明</small>
+                <img src="./images/TB2hQvnlzoIL1JjSZFyXXbFBpXa-356060330.jpg" alt="" class="introduce">
+                <h3>ONLY秋季季品针织骷髅印花落肩蝙蝠袖T恤女</h3>
+                <p>ONLY秋季季品针织骷髅印花落肩蝙蝠袖T恤女|116330521 宽松版型 含羊毛 7天降退差价</p>
+                <div class="gods-footer">
+                    <span>水果</span>
+                    <span>食物</span>
+                    <div class="gods-footer-right">
+                        <span>999评论</span>
+                        <span>888喜欢</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goos-border">
+            <div class="goods-box">
+                <img src="./images/icon.jpg" alt="" class="icon">
+                <small>小明是个小小明</small>
+                <img src="./images/TB2UwA1cBoHL1JjSZFwXXb6vpXa_!!3012927588.jpg" alt="" class="introduce">
+                <h3>ONLY秋季季品针织骷髅印花落肩蝙蝠袖T恤女</h3>
+                <p>ONLY秋季季品针织骷髅印花落肩蝙蝠袖T恤女|116330521 宽松版型 含羊毛 7天降退差价</p>
+                <div class="gods-footer">
+                    <span>水果</span>
+                    <span>食物</span>
+                    <div class="gods-footer-right">
+                        <span>999评论</span>
+                        <span>888喜欢</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goos-border">
+            <div class="goods-box">
+                <img src="./images/icon.jpg" alt="" class="icon">
+                <small>小明是个小小明</small>
+                <img src="./images/604A2EF9-FD6E-45E9-84DE-52E647D81BDB.png" alt="" class="introduce">
+                <h3>阿迪达斯男鞋 三叶草女eqt support adv白粉运动休闲跑步鞋BB2791</h3>
+                <p>阿迪达斯男鞋 三叶草女eqt support adv白粉运动休闲跑步鞋BB2791 正品专柜货，支持鉴定，质量保证
+                </p>
+                <div class="gods-footer">
+                    <span>水果</span>
+                    <span>食物</span>
+                    <div class="gods-footer-right">
+                        <span>999评论</span>
+                        <span>888喜欢</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goos-border">
+            <div class="goods-box">
+                <img src="./images/icon.jpg" alt="" class="icon">
+                <small>小明是个小小明</small>
+                <img src="./images/TB23oDFvR8lpuFjSspaXXXJKpXa_!!379424083.jpg" alt="" class="introduce">
+                <h3>珀莱雅密集保湿补水护肤品套装正品爽肤水乳液滋养修护女士化妆品</h3>
+                <p>珀莱雅密集保湿补水护肤品套装正品爽肤水乳液滋养修护女士化妆品 高性价的选择 学生党的福利</p>
+                <div class="gods-footer">
+                    <span>水果</span>
+                    <span>食物</span>
+                    <div class="gods-footer-right">
+                        <span>999评论</span>
+                        <span>888喜欢</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- 页脚 -->
     <div class="footer">
@@ -211,7 +427,7 @@
                     $(".head-input").css("background", "rgba(255, 255, 255, .8)")
                     break;
                 case 5:
-                    $(".head-input").css("background", "rgba(255, 255, 255, 1)")
+                    $(".head-input").css("background", "rgba(255, 255, 255, .95)")
                     $(".head input").css({
                         width: "90%",
                         background: "rgb(230,230,230)",
@@ -238,7 +454,7 @@
             }
         }
         if (top > 50) {
-            $(".head-input").css("background", "rgba(255, 255, 255, 1)")
+            $(".head-input").css("background", "rgba(255, 255, 255, .95)")
             $(".head input").css({
                 width: "90%",
                 background: "rgb(230,230,230)",
@@ -251,30 +467,6 @@
             })
         }
 
-        // Math.floor(top)
-        // console.log(top)
-        // var a = Math.abs(top - ((Math.floor(top / 10)) * 10))
-        // console.log(a)
-        // switch () {
-        //     case 1:
-        //         break;
-        //     case 2:
-        //         break;
-        //     default:
-
-        // }
-
-
-
-
-
-        if (20 > top > 10) {
-            $(".head-input").css("background", "rgba(255, 255, 255, .1)")
-        } else if (30 > top > 20) {
-            $(".head-input").css("background", "rgba(255, 255, 255, .2)")
-        } else if (40 > top > 30) {
-            $(".head-input").css("background", "rgba(255, 255, 255, .3)")
-        }
     })
 </script>
 
